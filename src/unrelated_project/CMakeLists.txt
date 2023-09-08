@@ -4,6 +4,8 @@ project(proj)
 
 find_package(myLib REQUIRED)
 
+add_compile_definitions(MAGIC_NUMBER=5)
+
 add_executable(main main.cpp)
 target_link_libraries(main
 	${MYLIB_DIRS}
