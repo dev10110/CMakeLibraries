@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  ub:
+    build: .
+    volumes:
+      - ./src:/root/src
+    tty: true
